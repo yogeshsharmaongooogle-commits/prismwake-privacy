@@ -1,127 +1,343 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080d1b">
-  <title>PRISMWAKE — Privacy Policy</title>
+
+  <meta name="description"
+        content="Privacy Policy for PRISMWAKE, the endless cosmic arcade game published by SoloVision.">
+
+  <title>Privacy Policy | PRISMWAKE</title>
+
   <style>
-    * { box-sizing: border-box; }
+    :root {
+      color-scheme: dark;
+      --background: #070b16;
+      --surface: #10192b;
+      --surface-light: #15223a;
+      --border: #263751;
+      --text: #edf3ff;
+      --muted: #a5b5ce;
+      --cyan: #72e8ff;
+      --purple: #c5a0ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      background: #080d1b;
-      color: #e7edf8;
-      font-family: Arial, sans-serif;
-      line-height: 1.7;
+      padding: 24px 16px;
+      background:
+        radial-gradient(
+          ellipse at 50% 0%,
+          rgba(38, 89, 155, 0.20),
+          transparent 52%
+        ),
+        var(--background);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
     }
+
     main {
+      width: 100%;
       max-width: 800px;
-      margin: 45px auto;
-      padding: 30px;
-      background: #111a2c;
-      border: 1px solid #243650;
-      border-radius: 18px;
+      margin: 30px auto;
+      padding: clamp(24px, 5vw, 48px);
+      background: rgba(16, 25, 43, 0.96);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      box-shadow: 0 20px 70px rgba(0, 0, 0, 0.28);
     }
-    h1, h2 { color: #75e8ff; }
-    h1 { letter-spacing: 2px; }
-    a { color: #8bdcff; }
-    .date { color: #a7b5ca; font-size: 14px; }
+
+    .brand {
+      padding-bottom: 26px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .publisher {
+      color: var(--cyan);
+      font-size: 12px;
+      font-weight: 750;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 10px 0 0;
+      font-size: clamp(34px, 8vw, 52px);
+      line-height: 1.15;
+      letter-spacing: 2px;
+      overflow-wrap: anywhere;
+    }
+
+    .tagline {
+      margin: 10px 0 0;
+      color: var(--cyan);
+      font-size: 14px;
+      font-weight: 650;
+      letter-spacing: 1.5px;
+    }
+
+    .policy-title {
+      margin-top: 28px;
+      color: var(--purple);
+      font-size: 25px;
+    }
+
+    .updated {
+      display: inline-block;
+      margin-top: 6px;
+      padding: 6px 12px;
+      background: var(--surface-light);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    h2 {
+      margin: 32px 0 10px;
+      color: var(--cyan);
+      font-size: 19px;
+      line-height: 1.45;
+    }
+
+    p {
+      margin: 10px 0 16px;
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    a {
+      color: var(--cyan);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover {
+      color: #ffffff;
+    }
+
+    .contact {
+      padding: 20px;
+      background: var(--surface-light);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .contact p:last-child {
+      margin-bottom: 0;
+    }
+
     footer {
-      margin-top: 35px;
+      margin-top: 36px;
       padding-top: 20px;
-      border-top: 1px solid #243650;
-      color: #a7b5ca;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
     }
-    @media (max-width: 600px) {
-      main { margin: 12px; padding: 22px; }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 10px;
+        font-size: 15px;
+      }
+
+      main {
+        margin: 8px auto;
+        border-radius: 16px;
+      }
     }
   </style>
 </head>
+
 <body>
-<main>
-  <h1>PRISMWAKE</h1>
-  <h2>Privacy Policy</h2>
-  <p class="date">Last updated: October 12, 2026</p>
+  <main>
+    <header class="brand">
+      <div class="publisher">An independent game by SoloVision</div>
+      <h1>PRISMWAKE</h1>
+      <p class="tagline">DODGE. SURVIVE. TRANSCEND.</p>
 
-  <p>
-    This Privacy Policy explains how PRISMWAKE ("the Game") handles
-    information when you play our mobile arcade game.
-  </p>
+      <h2 class="policy-title">Privacy Policy</h2>
+      <div class="updated">
+        Last updated: October 12, 2026
+      </div>
+    </header>
 
-  <h2>1. Information We Collect</h2>
-  <p>
-    PRISMWAKE does not require an account to play. The game is designed
-    to store gameplay information such as your best score and game
-    preferences locally on your device.
-  </p>
-  <p>
-    In the current version, these local values are used to remember
-    your progress and preferences. They are not sent to us by the
-    local storage features themselves.
-  </p>
+    <p>
+      This Privacy Policy explains how SoloVision ("we", "us", or "our")
+      handles information in PRISMWAKE ("the Game"), an arcade survival
+      game for Android.
+    </p>
 
-  <h2>2. Local Storage</h2>
-  <p>
-    The Game may store your best score and local settings on your device.
-    These values remain on your device unless you remove the app or
-    clear its data. We do not receive these locally stored values
-    through the game's local storage features.
-  </p>
+    <p>
+      This policy applies to the version of PRISMWAKE distributed by
+      SoloVision through Google Play. It describes the information
+      handled by the Game and how users can contact us about privacy.
+    </p>
 
-  <h2>3. Data Sharing and Third Parties</h2>
-  <p>
-    If the published version contains no analytics, advertising,
-    account services, or third-party SDKs that transmit information,
-    the Game does not send personal information to third parties
-    through those services.
-  </p>
-  <p>
-    If third-party services are added in a future release, this policy
-    will be updated to describe the information they collect and how
-    it is used or shared.
-  </p>
+    <h2>1. Information We Collect</h2>
 
-  <h2>4. Permissions and Internet Access</h2>
-  <p>
-    The information handled by the Game depends on the permissions
-    and services included in the installed version. We will disclose
-    any material changes to data handling in an updated policy.
-  </p>
+    <p>
+      PRISMWAKE does not require users to create an account or provide
+      personal information to play. The Game is designed to operate
+      without collecting or transmitting players' personal information
+      to SoloVision.
+    </p>
 
-  <h2>5. Data Security and Retention</h2>
-  <p>
-    Locally stored gameplay values remain on your device and are
-    managed by the application. You can remove these values by
-    clearing the application's data or uninstalling the Game.
-  </p>
+    <p>
+      The Game does not include advertisements or analytics in the
+      version covered by this policy. We do not sell users' personal
+      information.
+    </p>
 
-  <h2>6. Children's Privacy</h2>
-  <p>
-    PRISMWAKE does not intentionally collect personal information
-    from children through its local gameplay features. If the Game's
-    audience or data practices change, this policy will be reviewed
-    and updated as appropriate.
-  </p>
+    <h2>2. Information Stored on Your Device</h2>
 
-  <h2>7. Changes to This Policy</h2>
-  <p>
-    This Privacy Policy may be updated when the Game's features
-    or data practices change. The latest version will be published
-    on this page with its updated revision date.
-  </p>
+    <p>
+      PRISMWAKE stores your best score locally on your device so that
+      your record can be remembered between sessions. Temporary gameplay
+      information, such as the current score, remaining lives, and
+      gameplay state, is processed on the device to operate the game.
+    </p>
 
-  <h2>8. Contact</h2>
-  <p>
-    For privacy questions, contact the developer:
-    <a href="mailto:prismwake.support@gmail.com">prismwake.support@gmail.com</a>
-  </p>
-  <p>
-    Developer or publisher: SoloVision
-  </p>
+    <p>
+      This locally stored gameplay information is not sent to
+      SoloVision by the Game. Local records can generally be removed
+      by clearing the application's data or uninstalling the Game.
+    </p>
 
-  <footer>
-    PRISMWAKE — DODGE. SURVIVE. TRANSCEND.
-  </footer>
-</main>
+    <h2>3. Data Sharing and Third-Party Services</h2>
+
+    <p>
+      The Game does not sell or share personal information with
+      third parties through its gameplay functionality. The version
+      covered by this policy does not use advertising or analytics
+      services to collect player information.
+    </p>
+
+    <p>
+      PRISMWAKE includes a link to this Privacy Policy. When you tap
+      that link, the policy opens in your device's external browser.
+      The browser and website hosting provider may process technical
+      information associated with loading the webpage under their
+      own privacy practices. This browser activity is not the Game
+      transmitting your locally stored score to SoloVision.
+    </p>
+
+    <h2>4. Permissions and Device Access</h2>
+
+    <p>
+      The current version of PRISMWAKE does not request runtime
+      permissions to access sensitive device features such as your
+      location, contacts, camera, microphone, or personal photos.
+      The Game stores its best score locally on your device.
+    </p>
+
+    <p>
+      The Game does not need an account or access to these sensitive
+      features to provide its core gameplay. Opening this policy
+      uses your device's external browser.
+    </p>
+
+    <h2>5. Purchases and Payments</h2>
+
+    <p>
+      If you purchase or download PRISMWAKE through Google Play,
+      payment processing is handled by Google Play under Google's
+      applicable terms and privacy practices. The Game does not
+      collect payment card details directly.
+    </p>
+
+    <p>
+      For questions about Google Play billing or transactions,
+      please refer to Google's support resources.
+    </p>
+
+    <p>
+      <a href="https://support.google.com/googleplay/">
+        Google Play Help
+      </a>
+      &nbsp;·&nbsp;
+      <a href="https://policies.google.com/privacy">
+        Google Privacy Policy
+      </a>
+    </p>
+
+    <h2>6. Data Retention and Deletion</h2>
+
+    <p>
+      Best scores and other locally retained gameplay data remain
+      on your device until they are cleared or the Game is uninstalled.
+      We do not maintain a PRISMWAKE account database or a server
+      containing these local gameplay records.
+    </p>
+
+    <h2>7. Children's Privacy</h2>
+
+    <p>
+      PRISMWAKE does not require personal information to play, and
+      the Game is not designed to collect personal information from
+      children. If the Game's audience, features, or data practices
+      change, we will review this policy and update it as necessary.
+    </p>
+
+    <h2>8. Security</h2>
+
+    <p>
+      The Game is designed to keep its gameplay records on the
+      user's device rather than transmitting those records to
+      SoloVision. Users should keep their devices secure and use
+      the device's available security features.
+    </p>
+
+    <h2>9. Changes to This Privacy Policy</h2>
+
+    <p>
+      We may update this policy if the Game's functionality,
+      data practices, or applicable requirements change. The
+      revised policy will be published at this same webpage,
+      and the "Last updated" date will be changed accordingly.
+    </p>
+
+    <h2>10. Contact Us</h2>
+
+    <div class="contact">
+      <p>
+        If you have questions or concerns about this Privacy Policy,
+        contact the developer using the details below.
+      </p>
+
+      <p><strong>Publisher:</strong> SoloVision</p>
+
+      <p>
+        <strong>Privacy contact:</strong>
+        <a href="mailto:prismwake.support@gmail.com">
+          prismwake.support@gmail.com
+        </a>
+      </p>
+    </div>
+
+    <footer>
+      PRISMWAKE &mdash; DODGE. SURVIVE. TRANSCEND.
+      <br>
+      &copy; 2026 SoloVision. All rights reserved.
+    </footer>
+  </main>
 </body>
 </html>
+```
